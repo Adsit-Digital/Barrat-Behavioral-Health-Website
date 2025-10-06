@@ -4,7 +4,7 @@
  */
  {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "v1-serene-pathways-1710255b-804f-4eac-8ecf-9b1e16be6917",
+	"name": "barrat-behavioral-health-and-consulting",
 	"main": "worker/index.ts",
 	"compatibility_date": "2025-04-24",
 	"assets": {

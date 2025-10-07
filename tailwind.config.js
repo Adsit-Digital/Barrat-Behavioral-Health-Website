@@ -1,7 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ['class'],
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './index.html', 
+    './src/**/*.{js,ts,jsx,tsx}',
+    // Only include files that actually exist and are used
+    './src/components/**/*.{js,ts,jsx,tsx}',
+    './src/pages/**/*.{js,ts,jsx,tsx}',
+    './src/hooks/**/*.{js,ts,jsx,tsx}',
+    './src/lib/**/*.{js,ts,jsx,tsx}'
+  ],
+  safelist: [
+    // Keep essential classes that might be dynamically generated
+    'bg-brand-orange',
+    'text-brand-orange',
+    'border-brand-orange',
+    'hover:bg-brand-orange-dark',
+  ],
   theme: {
   	extend: {
   		fontFamily: {

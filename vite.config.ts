@@ -91,13 +91,28 @@ export default ({ mode }: { mode: string }) => {
   return defineConfig({
     plugins: [react(), cloudflare(), watchDependenciesPlugin()],
     build: {
-      minify: true,
-      sourcemap: "inline", // Use inline source maps for better error reporting
+      minify: "terser",
+      sourcemap: mode === "development" ? "inline" : false,
       rollupOptions: {
         output: {
-          sourcemapExcludeSources: false, // Include original source in source maps
+          manualChunks: {
+            vendor: ['react', 'react-dom'],
+            router: ['react-router-dom'],
+            ui: ['lucide-react', 'framer-motion'],
+            utils: ['clsx', 'tailwind-merge', 'class-variance-authority']
+          },
+          chunkFileNames: 'assets/[name]-[hash].js',
+          entryFileNames: 'assets/[name]-[hash].js',
+          assetFileNames: 'assets/[name]-[hash].[ext]'
         },
       },
+      terserOptions: {
+        compress: {
+          drop_console: mode === "production",
+          drop_debugger: true,
+        },
+      },
+      chunkSizeWarningLimit: 1000,
     },
     customLogger: env.VITE_LOGGER_TYPE === 'json' ? customLogger : undefined,
     // Enable source maps in development too

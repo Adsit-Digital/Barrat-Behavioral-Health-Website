@@ -13,5 +13,9 @@
 	},
 	"observability": {
 		"enabled": true
-	}
+	},
+	"routes": [
+		"barratbhandconsulting.com/*",
+		"www.barratbhandconsulting.com/*"
+	]
 }

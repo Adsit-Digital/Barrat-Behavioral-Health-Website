@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://barratbehavioralhealth.com/sitemap.xml
+Sitemap: https://barratbhandconsulting.com/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

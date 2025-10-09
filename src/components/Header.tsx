@@ -85,9 +85,9 @@ export function Header() {
                 className={({ isActive }) =>
                   cn(navigationMenuTriggerStyle(), isActive && "text-brand-orange font-semibold")
                 }
-                aria-label="Contact"
+                aria-label="Contact Us"
               >
-                Contact
+                Contact Us
               </NavLink>
             </NavigationMenuItem>
           </NavigationMenuList>
@@ -113,7 +113,7 @@ export function Header() {
                 <Link to="/about" className="hover:text-brand-orange transition-colors" aria-label="About">About</Link>
                 <Link to="/services" className="hover:text-brand-orange transition-colors" aria-label="Services">Services</Link>
                 <Link to="/blog" className="hover:text-brand-orange transition-colors" aria-label="Blog">Blog</Link>
-                <Link to="/contact" className="hover:text-brand-orange transition-colors" aria-label="Contact">Contact</Link>
+                <Link to="/contact" className="hover:text-brand-orange transition-colors" aria-label="Contact Us">Contact Us</Link>
                 <Button asChild className="bg-brand-orange hover:bg-brand-orange-dark text-white rounded-lg px-6 py-3 transition-colors mt-4">
                   <Link to="/contact" aria-label="Book an appointment">
                     Book Appointment

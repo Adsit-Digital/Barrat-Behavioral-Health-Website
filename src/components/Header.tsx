@@ -79,15 +79,26 @@ export function Header() {
                 Blog
               </NavLink>
             </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  cn(navigationMenuTriggerStyle(), isActive && "text-brand-orange font-semibold")
+                }
+                aria-label="Contact"
+              >
+                Contact
+              </NavLink>
+            </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
         
         {/* Book Appointment Button */}
         <div className="flex items-center gap-2 flex-shrink-0">
           <Button asChild className="hidden md:inline-flex bg-brand-orange hover:bg-brand-orange-dark text-white rounded-lg px-6 py-3 transition-colors">
-            <a href="https://care.headway.co/providers/kadija-conteh-barrat?utm_source=website&utm_medium=direct_link" target="_blank" rel="noopener noreferrer" aria-label="Book an appointment">
+            <Link to="/contact" aria-label="Book an appointment">
               Book Appointment
-            </a>
+            </Link>
           </Button>
           <Sheet>
             <SheetTrigger asChild>
@@ -102,10 +113,11 @@ export function Header() {
                 <Link to="/about" className="hover:text-brand-orange transition-colors" aria-label="About">About</Link>
                 <Link to="/services" className="hover:text-brand-orange transition-colors" aria-label="Services">Services</Link>
                 <Link to="/blog" className="hover:text-brand-orange transition-colors" aria-label="Blog">Blog</Link>
+                <Link to="/contact" className="hover:text-brand-orange transition-colors" aria-label="Contact">Contact</Link>
                 <Button asChild className="bg-brand-orange hover:bg-brand-orange-dark text-white rounded-lg px-6 py-3 transition-colors mt-4">
-                  <a href="https://care.headway.co/providers/kadija-conteh-barrat?utm_source=website&utm_medium=direct_link" target="_blank" rel="noopener noreferrer" aria-label="Book an appointment">
+                  <Link to="/contact" aria-label="Book an appointment">
                     Book Appointment
-                  </a>
+                  </Link>
                 </Button>
               </nav>
             </SheetContent>

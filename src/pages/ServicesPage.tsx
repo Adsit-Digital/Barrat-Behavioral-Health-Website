@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import { SEO } from "@/components/SEO";
 const services = [
   {
@@ -136,9 +137,9 @@ export function ServicesPage() {
             </p>
             <div className="mt-8">
               <Button asChild size="lg" className="bg-brand-orange hover:bg-brand-orange-dark text-white font-semibold rounded-lg px-8 py-4 text-base transition-transform hover:scale-105">
-                <a href="https://care.headway.co/providers/kadija-conteh-barrat?utm_source=website&utm_medium=direct_link" target="_blank" rel="noopener noreferrer" aria-label="Book an appointment">
+                <Link to="/contact" aria-label="Book an appointment">
                   Book an Appointment
-                </a>
+                </Link>
               </Button>
             </div>
           </div>

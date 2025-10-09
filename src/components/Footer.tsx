@@ -33,9 +33,9 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Get Help</h3>
             <div className="mt-4">
-              <a href="https://care.headway.co/providers/kadija-conteh-barrat?utm_source=website&utm_medium=direct_link" target="_blank" rel="noopener noreferrer" className="inline-block bg-brand-orange text-white font-semibold py-3 px-6 rounded-lg hover:bg-brand-orange-dark transition-colors" aria-label="Book an appointment">
+              <Link to="/contact" className="inline-block bg-brand-orange text-white font-semibold py-3 px-6 rounded-lg hover:bg-brand-orange-dark transition-colors" aria-label="Book an appointment">
                 Book an Appointment
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -13,9 +13,9 @@ export function HeroSection() {
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Button asChild size="lg" className="bg-brand-orange hover:bg-brand-orange-dark text-white font-semibold rounded-lg px-8 py-6 text-base transition-transform hover:scale-105 w-full sm:w-auto">
-            <a href="https://care.headway.co/providers/kadija-conteh-barrat?utm_source=website&utm_medium=direct_link" target="_blank" rel="noopener noreferrer" aria-label="Book an appointment">
+            <Link to="/contact" aria-label="Book an appointment">
               Book Appointment
-            </a>
+            </Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white font-semibold rounded-lg px-8 py-6 text-base transition-colors w-full sm:w-auto border-2 bg-white/50 hover:bg-brand-orange">
             <Link to="/services" aria-label="Explore our services">

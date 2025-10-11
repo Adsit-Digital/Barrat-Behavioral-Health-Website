@@ -27,9 +27,9 @@ const specialties = [
 export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 relative">
-      {/* Curvy Orange Line */}
-      <div className="absolute bottom-0 left-0 right-0 h-2 bg-primary-orange" style={{
-        clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 80%)'
+      {/* Curvy Orange Border with Multiple Waves */}
+      <div className="absolute bottom-0 left-0 right-0 h-3 bg-primary-orange" style={{
+        clipPath: 'polygon(0 0, 25% 0, 35% 100%, 50% 0, 65% 100%, 75% 0, 100% 0, 100% 100%, 0 100%)'
       }}></div>
       
       <div className="container max-w-container h-20 flex items-center justify-between px-4 sm:px-6 lg:px-8">

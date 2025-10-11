@@ -4,12 +4,7 @@ import { ApproachSection } from "./ContentSections";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex flex-col overflow-hidden">
-      {/* Smooth S-Curve Orange Border at Top */}
-      <div className="absolute top-0 left-0 right-0 h-4 bg-primary-orange z-30" style={{
-        clipPath: 'polygon(0 0, 100% 0, 100% 70%, 75% 90%, 50% 100%, 25% 90%, 0 70%)'
-      }}></div>
-      
+    <section className="hero-section relative min-h-screen flex flex-col overflow-hidden">
       {/* Video Background */}
       <video 
         autoPlay 

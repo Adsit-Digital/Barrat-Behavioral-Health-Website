@@ -3,16 +3,19 @@ import { Link } from "react-router-dom";
 export function HeroSection() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Video Background */}
-      <video 
-        autoPlay 
-        muted 
-        loop 
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0"
-      >
-        <source src="https://media.inboundwizard.com/videoBanner.mp4" type="video/mp4" />
-      </video>
+      {/* Background with gradient and fallback image */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        {/* Gradient Background */}
+        <div className="absolute inset-0 gradient-primary"></div>
+        
+        {/* Fallback Background Image */}
+        <div 
+          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3')`
+          }}
+        ></div>
+      </div>
       
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 z-10" />

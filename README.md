@@ -1,5 +1,6 @@
 # Serene Pathways Mental Health
 
+<!-- Build: Updated 2025-10-12 -->
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/Digital-Forrest/Barrat-Behavioral-Heath-website)
 
 Serene Pathways is a professional, visually stunning, and user-friendly website for a mental health practice. Built on a modern serverless stack with Cloudflare Workers and React, the application provides a calm, welcoming, and informative experience for potential clients. The design prioritizes clarity, empathy, and ease of access to crucial information, such as services offered, the practitioner's approach, and how to book an appointment. The architecture is a Single Page Application (SPA) utilizing React Router for seamless navigation between different content sections, giving the feel of a traditional multi-page website while maintaining the performance benefits of a modern web app.

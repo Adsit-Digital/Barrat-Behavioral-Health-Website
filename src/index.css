@@ -105,8 +105,8 @@
     left: 0;
     right: 0;
     width: 100vw;
-    height: 75px;
-    background-image: url("/header-curve1.png");
+    height: 50px;
+    background-image: url("/header-curve1.svg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center bottom;

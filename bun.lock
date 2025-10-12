@@ -4,7 +4,6 @@
     "": {
       "name": "v1-serene-pathways-1710255b-804f-4eac-8ecf-9b1e16be6917",
       "dependencies": {
-        "@radix-ui/react-dialog": "1.1.15",
         "@radix-ui/react-navigation-menu": "^1.2.13",
         "@radix-ui/react-slot": "^1.2.3",
         "@tailwindcss/typography": "^0.5.19",
@@ -24,6 +23,7 @@
         "@cloudflare/vite-plugin": "^1.9.4",
         "@cloudflare/workers-types": "^4.20250424.0",
         "@eslint/js": "^9.22.0",
+        "@radix-ui/react-dialog": "1.1.15",
         "@types/node": "^22.15.3",
         "@types/react": "^18.3.1",
         "@types/react-dom": "^18.3.1",

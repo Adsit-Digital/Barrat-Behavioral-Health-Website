@@ -9,9 +9,8 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
-import React from "react";
+import { Menu, X } from "lucide-react";
+import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 const specialties = [
   { title: "ADHD Care", href: "/services" },
@@ -25,6 +24,8 @@ const specialties = [
   { title: "Medical Weight Loss Management", href: "/services" },
 ];
 export function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       
@@ -112,31 +113,84 @@ export function Header() {
               Book Appointment
             </Link>
           </Button>
-          <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="outline" size="icon" className="md:hidden">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Toggle navigation menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right">
-              <nav className="grid gap-6 text-lg font-medium mt-8">
-                <Link to="/" className="hover:text-brand-orange transition-colors" aria-label="Home">Home</Link>
-                <Link to="/about" className="hover:text-brand-orange transition-colors" aria-label="About">About</Link>
-                <Link to="/services" className="hover:text-brand-orange transition-colors" aria-label="Services">Services</Link>
-                <Link to="/blog" className="hover:text-brand-orange transition-colors" aria-label="Blog">Blog</Link>
-                <Link to="/testimonials" className="hover:text-brand-orange transition-colors" aria-label="Testimonials">Testimonials</Link>
-                <Link to="/contact" className="hover:text-brand-orange transition-colors" aria-label="Contact Us">Contact Us</Link>
-                <Button asChild className="bg-brand-orange hover:bg-brand-orange/90 text-white rounded-lg px-6 py-3 transition-colors mt-4">
-                  <Link to="/contact" aria-label="Book an appointment">
-                    Book Appointment
-                  </Link>
-                </Button>
-              </nav>
-            </SheetContent>
-          </Sheet>
+          
+          {/* Mobile Menu Toggle */}
+          <Button 
+            variant="outline" 
+            size="icon" 
+            className="md:hidden"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            <span className="sr-only">Toggle navigation menu</span>
+          </Button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden border-t bg-background">
+          <nav className="container max-w-container px-4 py-6 grid gap-6 text-lg font-medium">
+            <Link 
+              to="/" 
+              className="hover:text-brand-orange transition-colors" 
+              aria-label="Home"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/about" 
+              className="hover:text-brand-orange transition-colors" 
+              aria-label="About"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              About
+            </Link>
+            <Link 
+              to="/services" 
+              className="hover:text-brand-orange transition-colors" 
+              aria-label="Services"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Services
+            </Link>
+            <Link 
+              to="/blog" 
+              className="hover:text-brand-orange transition-colors" 
+              aria-label="Blog"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Blog
+            </Link>
+            <Link 
+              to="/testimonials" 
+              className="hover:text-brand-orange transition-colors" 
+              aria-label="Testimonials"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Testimonials
+            </Link>
+            <Link 
+              to="/contact" 
+              className="hover:text-brand-orange transition-colors" 
+              aria-label="Contact Us"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Contact Us
+            </Link>
+            <Button 
+              asChild 
+              className="bg-brand-orange hover:bg-brand-orange/90 text-white rounded-lg px-6 py-3 transition-colors mt-4"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <Link to="/contact" aria-label="Book an appointment">
+                Book Appointment
+              </Link>
+            </Button>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }

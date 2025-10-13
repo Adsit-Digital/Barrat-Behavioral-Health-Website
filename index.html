@@ -73,13 +73,21 @@
     <!-- Preload critical resources -->
     <link rel="preload" href="/src/index.css" as="style" />
     <link rel="preload" href="/src/main.tsx" as="script" />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Merriweather:wght@400&display=swap" as="style" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Merriweather:wght@400&display=swap&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" as="style" />
+    
+    <!-- Preload critical images -->
+    <link rel="preload" href="https://media.inboundwizard.com/Barratbhand-consulting%20main-logo.png" as="image" type="image/png" />
+    <link rel="preload" href="https://media.inboundwizard.com/videoBanner.mp4" as="video" type="video/mp4" />
     
     <!-- DNS prefetch for external resources -->
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
     <link rel="dns-prefetch" href="//fonts.gstatic.com" />
     <link rel="dns-prefetch" href="//media.inboundwizard.com" />
     <link rel="dns-prefetch" href="//api.ad-crm.com" />
+    
+    <!-- Preconnect to critical domains -->
+    <link rel="preconnect" href="https://media.inboundwizard.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
     <div id="root"></div>

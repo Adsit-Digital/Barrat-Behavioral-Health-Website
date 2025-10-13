@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { OptimizedImage } from "@/components/OptimizedImage";
 export function Footer() {
   return (
     <footer className="footer-wave bg-white text-dark-text">
@@ -6,7 +7,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2" aria-label="Barrat Behavioral Health and Primary Care Home">
-              <img src="https://media.inboundwizard.com/Barratbhand-consulting%20main-logo.png" alt="Barrat Behavioral Health Logo" className="h-12 w-auto" />
+              <OptimizedImage 
+                src="https://media.inboundwizard.com/Barratbhand-consulting%20main-logo.png" 
+                alt="Barrat Behavioral Health Logo" 
+                className="h-12 w-auto" 
+                priority={false}
+                width={150}
+                height={48}
+              />
             </Link>
             <p className="text-sm text-neutral-gray font-body">Supporting teens and adults to thrive at every stage.</p>
           </div>

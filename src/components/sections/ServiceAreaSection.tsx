@@ -1,3 +1,5 @@
+import { OptimizedVideo } from "@/components/OptimizedVideo";
+
 export function ServiceAreaSection() {
   const states = ["Virginia", "Washington D.C.", "Maryland", "Delaware", "West Virginia"];
   return (
@@ -17,14 +19,13 @@ export function ServiceAreaSection() {
         
         {/* Video Section */}
         <div className="mt-12 max-w-4xl mx-auto">
-          <video 
-            controls
+          <OptimizedVideo
+            src="https://media.inboundwizard.com/Rediscover_Wellness.mp4"
             className="w-full h-auto rounded-lg shadow-lg"
+            controls={true}
             preload="metadata"
-          >
-            <source src="https://media.inboundwizard.com/Rediscover_Wellness.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+            priority={false}
+          />
         </div>
       </div>
     </section>

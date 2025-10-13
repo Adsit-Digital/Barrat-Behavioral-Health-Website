@@ -3,6 +3,13 @@ if (import.meta.env.DEV) {
   import('@/lib/errorReporter');
 }
 
+// Register service worker in production
+if (import.meta.env.PROD) {
+  import('@/lib/serviceWorker').then(({ registerServiceWorker }) => {
+    registerServiceWorker();
+  });
+}
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import {

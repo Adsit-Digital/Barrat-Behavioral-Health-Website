@@ -12,6 +12,7 @@ import {
 import { Menu, X } from "lucide-react";
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
+import { OptimizedImage } from "@/components/OptimizedImage";
 const specialties = [
   { title: "ADHD Care", href: "/services" },
   { title: "PTSD Care", href: "/services" },
@@ -34,7 +35,14 @@ export function Header() {
       <div className="container max-w-container h-20 flex items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo - Increased by 35% */}
         <Link to="/" className="flex items-center flex-shrink-0" aria-label="Barrat Behavioral Health and Primary Care Home">
-          <img src="https://media.inboundwizard.com/Barratbhand-consulting%20main-logo.png" alt="Barrat Behavioral Health Logo" className="h-14 w-auto" />
+          <OptimizedImage 
+            src="https://media.inboundwizard.com/Barratbhand-consulting%20main-logo.png" 
+            alt="Barrat Behavioral Health Logo" 
+            className="h-14 w-auto" 
+            priority={true}
+            width={200}
+            height={56}
+          />
         </Link>
         
         {/* Centered Navigation Menu */}
@@ -197,11 +205,13 @@ export function Header() {
       {/* Header Curve - only on home page */}
       {isHomePage && (
         <div className="absolute top-20 left-0 right-0 z-10 pointer-events-none -mt-2 md:mt-0">
-          <img
+          <OptimizedImage
             src="https://media.inboundwizard.com/header-curve1.svg"
             alt=""
             aria-hidden="true"
             className="w-full h-[clamp(64px,10vw,100px)] object-fill"
+            priority={true}
+            sizes="100vw"
           />
         </div>
       )}

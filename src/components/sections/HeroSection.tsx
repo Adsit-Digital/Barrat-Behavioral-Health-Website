@@ -1,22 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ApproachSection } from "./ContentSections";
+import { OptimizedVideo } from "@/components/OptimizedVideo";
 
 export function HeroSection() {
   return (
     <section className="hero-section relative min-h-screen flex flex-col overflow-hidden">
       {/* Video Background */}
-      <video 
-        autoPlay 
-        muted 
-        loop 
-        playsInline
+      <OptimizedVideo
+        src="https://media.inboundwizard.com/videoBanner.mp4"
         className="absolute inset-0 w-full h-full object-cover z-0"
-      >
-        <source src="https://media.inboundwizard.com/videoBanner.mp4" type="video/mp4" />
-        {/* Fallback for browsers that don't support video */}
-        <div className="absolute inset-0 gradient-primary"></div>
-      </video>
+        priority={true}
+        autoPlay={true}
+        muted={true}
+        loop={true}
+        playsInline={true}
+        preload="metadata"
+      />
       
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 z-10" />

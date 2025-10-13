@@ -98,24 +98,50 @@ export default ({ mode }: { mode: string }) => {
           manualChunks: (id) => {
             // Create vendor chunk for large dependencies
             if (id.includes('node_modules')) {
+              // React core
               if (id.includes('react') || id.includes('react-dom')) {
                 return 'vendor-react';
               }
+              // Router
               if (id.includes('react-router')) {
                 return 'vendor-router';
               }
+              // UI components
+              if (id.includes('@radix-ui')) {
+                return 'vendor-ui';
+              }
+              // Icons
               if (id.includes('lucide-react')) {
                 return 'vendor-icons';
               }
+              // Animation libraries
               if (id.includes('framer-motion')) {
                 return 'vendor-motion';
               }
               // All other node_modules
               return 'vendor';
             }
-            // Create chunk for blog posts (large content)
+            
+            // Split large content
             if (id.includes('blog-posts')) {
               return 'blog-content';
+            }
+            
+            // Split by page for better caching
+            if (id.includes('/pages/')) {
+              const pageName = id.split('/pages/')[1].split('/')[0];
+              return `page-${pageName.toLowerCase()}`;
+            }
+            
+            // Split components
+            if (id.includes('/components/')) {
+              if (id.includes('/sections/')) {
+                return 'components-sections';
+              }
+              if (id.includes('/ui/')) {
+                return 'components-ui';
+              }
+              return 'components-core';
             }
           },
           chunkFileNames: 'assets/[name]-[hash].js',

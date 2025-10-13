@@ -104,13 +104,22 @@
     top: 0;
     left: 0;
     right: 0;
-    width: 100vw;
+    width: 100%;
     height: 100px;
     background-image: url("https://media.inboundwizard.com/header-curve1.svg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center bottom;
     z-index: 30;
+  }
+
+  @media (max-width: 640px) {
+    .hero-section::after {
+      width: 100%;
+      height: 100px; /* keep same visual placement on mobile */
+      background-position: center bottom;
+      background-size: 100% auto;
+    }
   }
 
   /* Wave Footer */

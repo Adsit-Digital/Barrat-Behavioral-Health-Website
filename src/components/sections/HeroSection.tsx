@@ -5,8 +5,8 @@ import { ApproachSection } from "./ContentSections";
 export function HeroSection() {
   return (
     <section className="hero-section relative min-h-screen flex flex-col overflow-hidden">
-      {/* Header Curve (positioned below sticky header) */}
-      <div className="absolute top-20 left-0 right-0 z-30 pointer-events-none">
+      {/* Header Curve (overlapped to eliminate gap) */}
+      <div className="absolute top-20 -mt-[6px] left-0 right-0 z-30 pointer-events-none">
         <img
           src="https://media.inboundwizard.com/header-curve1.svg"
           alt=""

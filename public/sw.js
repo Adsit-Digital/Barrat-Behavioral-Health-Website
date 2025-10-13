@@ -8,6 +8,17 @@ const STATIC_ASSETS = [
   '/blog'
 ];
 
+// External resources that should be cached aggressively
+const EXTERNAL_RESOURCES = [
+  'https://media.inboundwizard.com/Barratbhand-consulting%20main-logo.png',
+  'https://media.inboundwizard.com/videoBanner.mp4',
+  'https://media.inboundwizard.com/header-curve1.svg',
+  'https://media.inboundwizard.com/Rediscover_Wellness.mp4',
+  'https://media.inboundwizard.com/supporting%20pages%20background.webm',
+  'https://media.inboundwizard.com/insurance-carriers-accepted.png',
+  'https://media.inboundwizard.com/Kadija%20Conteh-Barrat%20(1).png'
+];
+
 // Cache strategies
 const CACHE_STRATEGIES = {
   // Cache first for static assets
@@ -26,15 +37,33 @@ self.addEventListener('install', (event) => {
     caches.open(CACHE_NAME)
       .then((cache) => {
         console.log('[SW] Caching static assets');
-        return cache.addAll(STATIC_ASSETS);
+        // Cache static assets first
+        return cache.addAll(STATIC_ASSETS)
+          .then(() => {
+            console.log('[SW] Static assets cached successfully');
+            // Cache external resources
+            return Promise.allSettled(
+              EXTERNAL_RESOURCES.map(url => 
+                fetch(url)
+                  .then(response => {
+                    if (response.ok) {
+                      return cache.put(url, response);
+                    }
+                  })
+                  .catch(error => {
+                    console.warn(`[SW] Failed to cache external resource ${url}:`, error);
+                  })
+              )
+            );
+          });
       })
       .then(() => {
-        console.log('[SW] Static assets cached successfully');
+        console.log('[SW] All assets cached successfully');
         // Skip waiting to activate immediately
         return self.skipWaiting();
       })
       .catch((error) => {
-        console.error('[SW] Failed to cache static assets:', error);
+        console.error('[SW] Failed to cache assets:', error);
       })
   );
 });
@@ -79,7 +108,9 @@ self.addEventListener('fetch', (event) => {
   }
 
   // Handle different types of requests
-  if (isStaticAsset(url.pathname)) {
+  if (isExternalResource(request.url)) {
+    event.respondWith(cacheFirst(request));
+  } else if (isStaticAsset(url.pathname)) {
     event.respondWith(cacheFirst(request));
   } else if (isApiRequest(url.pathname)) {
     event.respondWith(networkFirst(request));
@@ -91,6 +122,10 @@ self.addEventListener('fetch', (event) => {
 });
 
 // Helper functions
+function isExternalResource(url) {
+  return EXTERNAL_RESOURCES.some(resource => url.includes(resource.split('/').pop()));
+}
+
 function isStaticAsset(pathname) {
   return /\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot|mp4|webm|mov)$/i.test(pathname);
 }

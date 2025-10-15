@@ -5,6 +5,7 @@ const STATIC_ASSETS = [
   '/services',
   '/contact',
   '/testimonials',
+  '/referrals',
   '/blog'
 ];
 

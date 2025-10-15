@@ -104,6 +104,17 @@ export function Header() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavLink
+                to="/referrals"
+                className={({ isActive }) =>
+                  cn(navigationMenuTriggerStyle(), isActive && "text-brand-orange font-semibold")
+                }
+                aria-label="Referrals"
+              >
+                Referrals
+              </NavLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavLink
                 to="/contact"
                 className={({ isActive }) =>
                   cn(navigationMenuTriggerStyle(), isActive && "text-brand-orange font-semibold")
@@ -180,6 +191,14 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Testimonials
+            </Link>
+            <Link 
+              to="/referrals" 
+              className="hover:text-brand-orange transition-colors" 
+              aria-label="Referrals"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Referrals
             </Link>
             <Link 
               to="/contact" 

@@ -30,6 +30,7 @@ const ContactPage = lazy(() => import('@/pages/ContactPage').then(m => ({ defaul
 const TestimonialsPage = lazy(() => import('@/pages/TestimonialsPage').then(m => ({ default: m.TestimonialsPage })));
 const BlogPage = lazy(() => import('@/pages/BlogPage').then(m => ({ default: m.BlogPage })));
 const BlogPostPage = lazy(() => import('@/pages/BlogPostPage').then(m => ({ default: m.BlogPostPage })));
+const ReferralsPage = lazy(() => import('@/pages/ReferralsPage').then(m => ({ default: m.ReferralsPage })));
 
 // Loading component
 const PageLoader = () => (
@@ -96,6 +97,14 @@ const router = createBrowserRouter([
         element: (
           <Suspense fallback={<PageLoader />}>
             <BlogPostPage />
+          </Suspense>
+        )
+      },
+      { 
+        path: "/referrals", 
+        element: (
+          <Suspense fallback={<PageLoader />}>
+            <ReferralsPage />
           </Suspense>
         )
       },

@@ -23,6 +23,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2">
               <li><Link to="/about" className="text-base text-neutral-gray hover:text-primary-blue transition-colors duration-300 font-body" aria-label="About">About Us</Link></li>
               <li><Link to="/services" className="text-base text-neutral-gray hover:text-primary-blue transition-colors duration-300 font-body" aria-label="Services">Services</Link></li>
+              <li><Link to="/referrals" className="text-base text-neutral-gray hover:text-primary-blue transition-colors duration-300 font-body" aria-label="Referrals">Referrals</Link></li>
               <li><Link to="/blog" className="text-base text-neutral-gray hover:text-primary-blue transition-colors duration-300 font-body" aria-label="Blog">Blog</Link></li>
             </ul>
           </div>
@@ -40,7 +41,7 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-dark-text tracking-wider uppercase font-heading">Get Help</h3>
             <div className="mt-4">
-              <Link to="/contact" className="inline-block bg-primary-blue text-white font-semibold py-3 px-6 rounded-md hover:bg-primary-blue/90 transition-all duration-300 hover:scale-105 font-heading" aria-label="Book an appointment">
+              <Link to="/contact" className="inline-block bg-brand-blue text-white font-semibold py-3 px-6 rounded-md hover:bg-brand-blue/90 transition-all duration-300 hover:scale-105 font-heading" aria-label="Book an appointment">
                 Book an Appointment
               </Link>
             </div>

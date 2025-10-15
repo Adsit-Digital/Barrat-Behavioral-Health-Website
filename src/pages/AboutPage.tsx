@@ -31,7 +31,7 @@ export function AboutPage() {
         {/* Content */}
         <div className="relative z-10 container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-gray-900 leading-tight">
-            About Barrat Behavioral Health & Primary
+            About Barrat Behavioral Health & Primary Care
           </h1>
           <p className="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-600">
             Your partner in navigating the path to mental wellness with expertise, compassion, and personalized care.

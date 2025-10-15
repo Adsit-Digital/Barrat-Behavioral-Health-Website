@@ -58,8 +58,8 @@ export function AboutPage() {
       {/* Founder Section */}
       <section className="py-16 md:py-24">
         <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="order-2 lg:order-1">
+          <div className="max-w-4xl mx-auto">
+            <div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900">
                 Kadija Conteh-Barrat, DNP, FNP-BC, PMHNP-BC
               </h2>
@@ -96,13 +96,6 @@ export function AboutPage() {
                   </a>
                 </Button>
               </div>
-            </div>
-            <div className="order-1 lg:order-2">
-              <img
-                src="https://media.inboundwizard.com/Kadija%20Conteh-Barrat%20(1).png"
-                alt="Kadija Conteh-Barrat"
-                className="rounded-lg shadow-xl w-full h-auto object-cover aspect-square"
-              />
             </div>
           </div>
         </div>

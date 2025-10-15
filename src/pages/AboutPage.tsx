@@ -2,24 +2,6 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import { SEO } from "@/components/SEO";
 export function AboutPage() {
-  const values = [
-    {
-      title: "Compassion",
-      description: "We provide care with empathy, understanding, and kindness, creating a safe and non-judgmental space for healing.",
-    },
-    {
-      title: "Integrity",
-      description: "We adhere to the highest ethical standards, ensuring confidentiality, transparency, and trust in our therapeutic relationships.",
-    },
-    {
-      title: "Empowerment",
-      description: "We empower our clients by focusing on their strengths, fostering resilience, and providing them with the tools to navigate life's challenges.",
-    },
-    {
-      title: "Collaboration",
-      description: "We believe in a partnership-based approach, working together with clients to create personalized treatment plans that honor their unique journey.",
-    },
-  ];
   const whatSetsUsApart = [
     "Strengths-Based, Neurodivergent-Affirming Approach – We honor your unique perspective and build on your strengths. Specialized support for individuals living with ADHD, Depression, Anxiety, trauma, PTSD, mood disorders, and Weight Management.",
     "Comprehensive, Personalized Services – Care plans are thoughtfully tailored to your specific needs and goals.",
@@ -142,25 +124,27 @@ export function AboutPage() {
           </div>
         </div>
       </section>
-      {/* Mission and Values Section */}
+      {/* Mission and Vision Section */}
       <section className="py-16 md:py-24">
         <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900">Our Mission & Values</h2>
-            <p className="mt-4 text-lg text-gray-600">
-              Our mission is to provide accessible, high-quality mental healthcare that destigmatizes mental health challenges and empowers individuals to lead fulfilling lives. We are guided by our core values in every interaction.
-            </p>
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900">Our Mission & Vision</h2>
           </div>
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-            {values.map((value) => (
-              <div key={value.title} className="flex items-start gap-4">
-                <CheckCircle className="h-8 w-8 text-brand-orange flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-xl font-semibold text-gray-800">{value.title}</h3>
-                  <p className="text-gray-600 mt-1">{value.description}</p>
-                </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="flex items-start gap-4">
+              <CheckCircle className="h-8 w-8 text-brand-orange flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800">Vision</h3>
+                <p className="text-gray-600 mt-2">A community where Adolescents and adults have the tools, support, and confidence to thrive at every stage of their journey.</p>
               </div>
-            ))}
+            </div>
+            <div className="flex items-start gap-4">
+              <CheckCircle className="h-8 w-8 text-brand-orange flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800">Mission</h3>
+                <p className="text-gray-600 mt-2">We are dedicated to supporting Adolescents and adults in achieving wellness, growth, and resilience, helping them thrive at every stage of life.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

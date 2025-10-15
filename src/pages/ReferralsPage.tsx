@@ -58,7 +58,7 @@ export function ReferralsPage() {
         </video>
         
         {/* Content */}
-        <div className="relative z-10 container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div className="relative z-10 container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-gray-900 mb-4">
               Professional Referrals
@@ -70,25 +70,8 @@ export function ReferralsPage() {
         </div>
       </section>
 
-      {/* Introduction Section */}
-      <section className="bg-white py-16 md:py-20">
-        <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-2xl md:text-3xl font-display font-bold text-gray-900 mb-6">
-              Making Mental Health Care Accessible
-            </h2>
-            <p className="text-lg text-gray-600 leading-relaxed">
-              At Barrat Behavioral Health & Primary Care, we understand that slow referrals can delay critical mental health treatment. Time is often of the essence when it comes to accessing psychiatric care. That's why we've designed a seamless referral process that makes it as easy as possible to connect patients and individuals with the care they need.
-            </p>
-            <p className="text-lg text-gray-600 leading-relaxed mt-4">
-              We support your clients and loved ones while respecting existing relationships and providing expert, compassionate care. Whether someone is looking for counseling, psychiatry and medication management, or comprehensive mental health support, we have the expertise and resources to help.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Two-Column Information Section */}
-      <section className="bg-light-gray py-16 md:py-20">
+      <section className="bg-light-gray py-12 md:py-16">
         <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* For Healthcare Professionals */}
@@ -137,7 +120,7 @@ export function ReferralsPage() {
       </section>
 
       {/* How It Works Section */}
-      <section className="bg-white py-16 md:py-20">
+      <section className="bg-white py-12 md:py-16">
         <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-display font-bold text-gray-900 mb-4">
@@ -183,7 +166,7 @@ export function ReferralsPage() {
       </section>
 
       {/* Referral Form Section */}
-      <section className="bg-light-gray py-16 md:py-20">
+      <section className="bg-light-gray py-12 md:py-16">
         <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-8">
@@ -220,7 +203,7 @@ export function ReferralsPage() {
       </section>
 
       {/* Contact Information Section */}
-      <section className="bg-white py-16 md:py-20">
+      <section className="bg-white py-12 md:py-16">
         <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-display font-bold text-gray-900 mb-4">

@@ -104,6 +104,17 @@ export function Header() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavLink
+                to="/about#why-choose-us"
+                className={({ isActive }) =>
+                  cn(navigationMenuTriggerStyle(), isActive && "text-brand-orange font-semibold")
+                }
+                aria-label="What Our Patients Say"
+              >
+                What Our Patients Say
+              </NavLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavLink
                 to="/referrals"
                 className={({ isActive }) =>
                   cn(navigationMenuTriggerStyle(), isActive && "text-brand-orange font-semibold")
@@ -191,6 +202,14 @@ export function Header() {
               onClick={() => setMobileMenuOpen(false)}
             >
               Testimonials
+            </Link>
+            <Link 
+              to="/about#why-choose-us" 
+              className="hover:text-brand-orange transition-colors" 
+              aria-label="What Our Patients Say"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              What Our Patients Say
             </Link>
             <Link 
               to="/referrals" 

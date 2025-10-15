@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 import { SEO } from "@/components/SEO";
+import { LogoCarousel } from "@/components/LogoCarousel";
 export function AboutPage() {
   const whatSetsUsApart = [
     "Strengths-Based, Neurodivergent-Affirming Approach – We honor your unique perspective and build on your strengths. Specialized support for individuals living with ADHD, Depression, Anxiety, trauma, PTSD, mood disorders, and Weight Management.",
@@ -83,7 +84,7 @@ export function AboutPage() {
         </div>
       </section>
       {/* Why Choose Us Section */}
-      <section className="bg-light-gray py-16 md:py-24">
+      <section id="why-choose-us" className="bg-light-gray py-16 md:py-24">
         <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900">Why Choose Us</h2>
@@ -104,9 +105,15 @@ export function AboutPage() {
                 ))}
               </ul>
             </div>
+            
+            {/* Logo Carousel */}
+            <div className="-mx-4 sm:-mx-6 lg:-mx-8">
+              <LogoCarousel />
+            </div>
+
             <div>
               <h3 className="text-2xl md:text-3xl">Choosing Us for Mental Wellness</h3>
-              <p>Partnering with us means embracing a journey where clinical expertise meets heartfelt support. With compassion at the center of everything we do, we’ll walk alongside you through each step of your healing process—offering guidance, encouragement, and tools that promote sustainable wellness and meaningful, positive change.</p>
+              <p>Partnering with us means embracing a journey where clinical expertise meets heartfelt support. With compassion at the center of everything we do, we'll walk alongside you through each step of your healing process—offering guidance, encouragement, and tools that promote sustainable wellness and meaningful, positive change.</p>
             </div>
             <div>
               <h3 className="text-2xl md:text-3xl">What to expect In your first session with me:</h3>

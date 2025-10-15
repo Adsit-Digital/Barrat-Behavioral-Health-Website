@@ -61,7 +61,7 @@ export function TestimonialsPage() {
               </h2>
               <div className="prose prose-lg max-w-none text-gray-600 space-y-4">
                 <p>
-                  This is Kadija from Barrat Behavioral Health & Primary Care (BBHC). We want to express our gratitude that you have chosen BBHC as your partner in health. Your experience matters deeply to us, and we believe that by sharing your thoughts, you can help countless others navigate mental health and find their way to real relief.
+                  From Barrat Behavioral Health and Primary (BBHC) we want to express our gratitude that you have chosen BBHC as your partner in health. Your experience matters deeply to us, and we believe that by sharing your thoughts, you can help countless others navigate mental health and find their way to real relief.
                 </p>
                 <p>
                   Could you leave us a quick review? You can write a review at this link here or click the button below.

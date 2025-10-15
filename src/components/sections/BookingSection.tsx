@@ -9,7 +9,7 @@ export function BookingSection() {
             Nurturing Mental Wellness for All Ages
           </h2>
           <p className="text-lg text-neutral-gray font-body mb-12">
-            Neurodivergent care for children, adolescents, and adults across the lifespan.
+            Neurodivergent care for adolescents and adults across the lifespan.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

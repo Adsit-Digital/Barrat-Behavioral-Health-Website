@@ -42,7 +42,7 @@ export function LogoCarousel() {
     <div className="w-full overflow-hidden bg-white py-12">
       <div 
         ref={scrollRef}
-        className="flex gap-12 overflow-hidden"
+        className="flex gap-20 overflow-hidden"
         style={{ 
           scrollBehavior: 'auto',
           WebkitOverflowScrolling: 'touch'
@@ -52,7 +52,7 @@ export function LogoCarousel() {
         {[...logos, ...logos].map((logo, index) => (
           <div 
             key={index} 
-            className="flex-shrink-0 w-64 h-48 flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
+            className="flex-shrink-0 w-[346px] h-[259px] flex items-center justify-center grayscale"
           >
             <img 
               src={logo} 

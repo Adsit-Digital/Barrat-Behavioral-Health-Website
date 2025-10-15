@@ -39,7 +39,7 @@ export function LogoCarousel() {
   }, []);
 
   return (
-    <div className="w-full overflow-hidden bg-white py-12">
+    <div className="w-full overflow-hidden bg-transparent py-6">
       <div 
         ref={scrollRef}
         className="flex gap-20 overflow-hidden"
@@ -52,7 +52,7 @@ export function LogoCarousel() {
         {[...logos, ...logos].map((logo, index) => (
           <div 
             key={index} 
-            className="flex-shrink-0 w-[346px] h-[259px] flex items-center justify-center grayscale"
+            className="flex-shrink-0 w-[346px] h-[259px] flex items-center justify-center"
           >
             <img 
               src={logo} 

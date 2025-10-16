@@ -36,7 +36,7 @@ export function Header() {
         {/* Logo - Increased by 35% */}
         <Link to="/" className="flex items-center flex-shrink-0" aria-label="Barrat Behavioral Health & Primary Care Home">
           <OptimizedImage 
-            src="https://media.inboundwizard.com/barrat%20behavioral%20health%20and%20primary%20care.svg" 
+            src="/media/barrat%20behavioral%20health%20and%20primary%20care.svg" 
             alt="Barrat Behavioral Health Logo" 
             className="h-14 w-auto" 
             priority={true}
@@ -244,7 +244,7 @@ export function Header() {
       {isHomePage && (
         <div className="absolute top-20 left-0 right-0 z-10 pointer-events-none -mt-2 md:mt-0">
           <OptimizedImage
-            src="https://media.inboundwizard.com/header-curve1.svg"
+            src="/media/header-curve1.svg"
             alt=""
             aria-hidden="true"
             className="w-full h-[clamp(64px,10vw,100px)] object-fill"

@@ -8,7 +8,7 @@ export function HeroSection() {
     <section className="hero-section relative min-h-screen flex flex-col overflow-hidden">
       {/* Video Background */}
       <OptimizedVideo
-        src="https://media.inboundwizard.com/videoBanner.mp4"
+        src="/media/videoBanner.mp4"
         className="absolute inset-0 w-full h-full object-cover z-0"
         priority={true}
         autoPlay={true}

@@ -26,7 +26,7 @@ export function AboutPage() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         >
-          <source src="https://media.inboundwizard.com/supporting%20pages%20background.webm" type="video/webm" />
+          <source src="/media/supporting%20pages%20background.webm" type="video/webm" />
         </video>
         
         {/* Content */}

@@ -8,7 +8,7 @@ export function Footer() {
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2" aria-label="Barrat Behavioral Health & Primary Care Home">
               <OptimizedImage 
-                src="https://media.inboundwizard.com/barrat%20behavioral%20health%20and%20primary%20care.svg" 
+                src="/media/barrat%20behavioral%20health%20and%20primary%20care.svg" 
                 alt="Barrat Behavioral Health Logo" 
                 className="h-12 w-auto" 
                 priority={false}

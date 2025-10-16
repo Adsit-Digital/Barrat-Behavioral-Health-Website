@@ -117,7 +117,7 @@ export function ServicesPage() {
               <p>We understand that every individual’s journey with mental health is unique. Our Medication Management service provides safe, thoughtful, and compassionate care—empowering you to feel balanced, supported, and in control of your wellness.</p>
             </div>
             <div className="prose lg:prose-lg max-w-none prose-p:text-gray-700 prose-headings:font-display prose-headings:text-gray-900 prose-p:leading-relaxed">
-              <h3>Psychotherapy & Counseling Services</h3>
+              <h3>Supportive Therapy</h3>
               <p>Our psychotherapy and counseling services provide a supportive, nonjudgmental space for individuals and families to process challenges, discover strengths, and move toward a healthier, more fulfilling life.</p>
             </div>
           </div>

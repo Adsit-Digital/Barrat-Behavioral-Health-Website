@@ -1,3 +1,4 @@
+// Updated with inline styles for production compatibility
 export interface Post {
   title: string;
   excerpt: string;

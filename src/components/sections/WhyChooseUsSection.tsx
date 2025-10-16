@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 const benefits = [
   { title: "Strengths-Based Care", description: "We focus on your inherent strengths to build resilience and foster growth." },
   { title: "Personalized Support", description: "Your treatment plan is tailored to your unique needs, goals, and circumstances." },
@@ -29,9 +30,9 @@ export function WhyChooseUsSection() {
             </div>
             <div className="mt-10">
               <Button asChild size="lg" className="bg-brand-blue hover:bg-brand-blue/90 text-white font-semibold rounded-md px-8 py-4 text-base transition-all duration-300 hover:scale-105">
-                <a href="https://care.headway.co/providers/kadija-conteh-barrat?utm_source=website&utm_medium=direct_link" target="_blank" rel="noopener noreferrer" aria-label="Book your session">
+                <Link to="/contact" aria-label="Book your session">
                   Book Your Session
-                </a>
+                </Link>
               </Button>
             </div>
           </div>

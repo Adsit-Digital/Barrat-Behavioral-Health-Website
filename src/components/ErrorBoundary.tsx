@@ -33,18 +33,20 @@ export class ErrorBoundary extends Component<Props, State> {
     this.setState({ errorInfo });
 
     // Report error to backend
-    errorReporter.report({
-      message: error.message,
-      stack: error.stack || "",
-      componentStack: errorInfo.componentStack,
-      errorBoundary: true,
-      errorBoundaryProps: {
-        componentName: this.constructor.name,
-      },
-      url: window.location.href,
-      timestamp: new Date().toISOString(),
-      level: "error",
-    });
+    if (errorReporter) {
+      errorReporter.report({
+        message: error.message,
+        stack: error.stack || "",
+        componentStack: errorInfo.componentStack,
+        errorBoundary: true,
+        errorBoundaryProps: {
+          componentName: this.constructor.name,
+        },
+        url: window.location.href,
+        timestamp: new Date().toISOString(),
+        level: "error",
+      });
+    }
   }
 
   private retry = () => {

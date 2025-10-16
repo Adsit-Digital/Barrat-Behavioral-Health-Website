@@ -26,15 +26,17 @@ export function RouteErrorBoundary() {
         errorMessage = JSON.stringify(error);
       }
 
-      errorReporter.report({
-        message: errorMessage,
-        stack: errorStack,
-        url: window.location.href,
-        timestamp: new Date().toISOString(),
-        source: 'react-router',
-        error: error,
-        level: "error",
-      });
+      if (errorReporter) {
+        errorReporter.report({
+          message: errorMessage,
+          stack: errorStack,
+          url: window.location.href,
+          timestamp: new Date().toISOString(),
+          source: 'react-router',
+          error: error,
+          level: "error",
+        });
+      }
     }
   }, [error]);
 

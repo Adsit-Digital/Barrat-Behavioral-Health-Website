@@ -43,7 +43,7 @@ export function FounderSection() {
             <img
               src="https://media.inboundwizard.com/Kadija%20Conteh-Barrat%20(1).png"
               alt="Kadija Conteh-Barrat"
-              className="rounded-lg shadow-xl w-full h-auto object-cover aspect-square"
+              className="rounded-full shadow-xl w-full h-auto object-cover aspect-square"
             />
           </div>
         </div>

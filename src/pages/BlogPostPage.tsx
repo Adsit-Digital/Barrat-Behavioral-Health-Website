@@ -3,9 +3,47 @@ import { getPostBySlug } from "@/lib/blog-posts";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
+import { useEffect, useState } from "react";
+
 export function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>();
-  const post = slug ? getPostBySlug(slug) : undefined;
+  const [post, setPost] = useState<ReturnType<typeof getPostBySlug>>();
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    try {
+      if (slug) {
+        const foundPost = getPostBySlug(slug);
+        setPost(foundPost);
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Unknown error');
+      console.error('Error loading blog post:', err);
+    }
+  }, [slug]);
+
+  if (error) {
+    return (
+      <>
+        <SEO
+          title="Error Loading Post"
+          description="There was an error loading this blog post."
+        />
+        <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 text-center">
+          <h1 className="text-4xl font-display font-bold text-gray-900">Error Loading Post</h1>
+          <p className="mt-4 text-lg text-gray-600">Error: {error}</p>
+          <div className="mt-8">
+            <Button asChild variant="outline" className="border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white font-semibold rounded-lg px-6 py-3 text-base transition-colors border-2">
+              <Link to="/blog" aria-label="Back to blog">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Blog
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </>
+    );
+  }
   if (!post) {
     return (
       <>

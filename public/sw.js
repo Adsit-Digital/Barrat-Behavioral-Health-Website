@@ -1,5 +1,5 @@
 // Generate cache name with timestamp to ensure updates on new deployments
-const CACHE_VERSION = '4.0.0';
+const CACHE_VERSION = '4.1.0';
 const CACHE_NAME = `barrat-health-v${CACHE_VERSION}-${self.__BUILD_ID__ || Date.now()}`;
 const STATIC_ASSETS = [
   '/',
@@ -113,7 +113,11 @@ self.addEventListener('fetch', (event) => {
   // Handle different types of requests
   if (isExternalResource(request.url)) {
     event.respondWith(cacheFirst(request));
+  } else if (isDynamicAsset(url.pathname)) {
+    // JS and CSS: serve from cache but revalidate in background
+    event.respondWith(staleWhileRevalidate(request));
   } else if (isStaticAsset(url.pathname)) {
+    // Images, fonts, videos: cache-first (rarely change)
     event.respondWith(cacheFirst(request));
   } else if (isApiRequest(url.pathname)) {
     event.respondWith(networkFirst(request));
@@ -133,7 +137,13 @@ function isExternalResource(url) {
 }
 
 function isStaticAsset(pathname) {
-  return /\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot|mp4|webm|mov)$/i.test(pathname);
+  // Truly static assets that rarely change (images, fonts, videos)
+  return /\.(png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot|mp4|webm|mov)$/i.test(pathname);
+}
+
+function isDynamicAsset(pathname) {
+  // JS and CSS files should be revalidated to get updates
+  return /\.(js|css)$/i.test(pathname);
 }
 
 function isApiRequest(pathname) {

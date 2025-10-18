@@ -4,7 +4,7 @@
  */
  {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "barrat-health-care-website",
+	"name": "barrat-behavioral-health-and-consulting",
 	"main": "worker/index.ts",
 	"compatibility_date": "2025-04-24",
 	"account_id": "34b84c2c053c7aac2c85d8016fc2195d",

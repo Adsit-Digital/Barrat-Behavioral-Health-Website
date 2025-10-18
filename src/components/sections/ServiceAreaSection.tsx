@@ -20,7 +20,7 @@ export function ServiceAreaSection() {
         {/* Video Section */}
         <div className="mt-12 max-w-4xl mx-auto">
           <OptimizedVideo
-            src="https://media.inboundwizard.com/Rediscover_Wellness.mp4"
+            src="/media/Rediscover_Wellness.mp4"
             className="w-full h-auto rounded-lg shadow-lg"
             controls={true}
             preload="metadata"

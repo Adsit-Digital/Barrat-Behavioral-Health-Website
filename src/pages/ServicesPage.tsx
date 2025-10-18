@@ -9,63 +9,63 @@ const services = [
     title: "ADHD Care",
     content: "Compassionate care for every step of your healing journey. We understand ADHD as a neurodevelopmental condition that impacts how individuals manage attention, energy, and impulses. Our approach involves a comprehensive evaluation, personalized treatment plans which may include medication management and therapy, and strategies to help you thrive.",
     span: "lg:col-span-2",
-    imageUrl: "https://media.inboundwizard.com/ADHD%20Care.png",
+    imageUrl: "/media/ADHD%20Care.png",
   },
   {
     id: "item-2",
     title: "PTSD Care",
     content: "We provide compassionate, trauma-informed care that supports healing, recovery, and renewed resilience for those affected by Post-Traumatic Stress Disorder. Our evidence-based therapies are designed to help you process traumatic events in a safe and supportive environment, reducing symptoms and improving your quality of life.",
     span: "lg:col-span-1",
-    imageUrl: "https://media.inboundwizard.com/PTSD%20Care.png",
+    imageUrl: "/media/PTSD%20Care.png",
   },
   {
     id: "item-3",
     title: "Trauma Care",
     content: "Comprehensive, compassionate care for healing and renewal from trauma. Every plan is customized to your pace and honors your boundaries. We utilize a range of therapeutic modalities to address the complex effects of trauma, helping you build coping skills and find a path toward healing.",
     span: "lg:col-span-1",
-    imageUrl: "https://media.inboundwizard.com/Trauma%20Care.png",
+    imageUrl: "/media/Trauma%20Care.png",
   },
   {
     id: "item-4",
     title: "Mental Health Care",
     content: "Promoting well-being through personalized, evidence-based support. We focus on holistic, trauma-informed approaches that empower and sustain recovery. Our general mental health services address a wide range of concerns, providing a foundation for emotional wellness and personal growth.",
     span: "lg:col-span-2",
-    imageUrl: "https://media.inboundwizard.com/Mental%20Health%20Care.png",
+    imageUrl: "/media/Mental%20Health%20Care.png",
   },
   {
     id: "item-5",
     title: "Mood Disorders",
     content: "Comprehensive care to stabilize emotions and restore balance. We take a holistic, trauma-informed, and patient-centered approach to support individuals with mood disorders such as depression and bipolar disorder. Treatment is tailored to your specific needs, combining therapy, medication management, and lifestyle support.",
     span: "lg:col-span-3",
-    imageUrl: "https://media.inboundwizard.com/Mood%20disorders%20care.png",
+    imageUrl: "/media/Mood%20disorders%20care.png",
   },
   {
     id: "item-6",
     title: "Anxiety Disorders",
     content: "Compassionate care for anxiety grounded in evidence-based support. Our goal is to help children, teens, and adults regain balance, confidence, and peace of mind. We treat various anxiety disorders, including generalized anxiety, panic disorder, and social anxiety, using proven therapeutic techniques.",
     span: "lg:col-span-1",
-    imageUrl: "https://media.inboundwizard.com/Anxiety%20Disorders.png",
+    imageUrl: "/media/Anxiety%20Disorders.png",
   },
   {
     id: "item-7",
     title: "Sleep Concerns & Psychosomatic Symptoms",
     content: "Comprehensive care for rest, balance, and overall well-being. We help patients identify and address the root causes of sleep difficulties and stress-related physical symptoms. Our integrated approach considers the deep connection between mind and body to promote holistic healing.",
     span: "lg:col-span-2",
-    imageUrl: "https://media.inboundwizard.com/Sleep%20concerns%20and%20psychosomatic%20symptoms.png",
+    imageUrl: "/media/Sleep%20concerns%20and%20psychosomatic%20symptoms.png",
   },
   {
     id: "item-8",
     title: "Immigrant & Refugee Psychological Support",
     content: "Trauma-informed psychological support for individuals and families navigating immigration. We provide professional, compassionate evaluations and therapy to support your journey, addressing the unique stressors and challenges faced by immigrant and refugee populations.",
     span: "lg:col-span-2",
-    imageUrl: "https://media.inboundwizard.com/Immigrant%20%26%20refugee%20psychological%20support.png",
+    imageUrl: "/media/Immigrant%20%26%20refugee%20psychological%20support.png",
   },
   {
     id: "item-9",
     title: "Medical Weight Loss Management",
     content: "A compassionate and comprehensive approach to medical weight loss management. We understand the connection between mental health and weight, offering support that addresses both psychological and physiological factors to help you achieve and maintain a healthy lifestyle.",
     span: "lg:col-span-1",
-    imageUrl: "https://media.inboundwizard.com/Medical%20weight%20loss%20management.png",
+    imageUrl: "/media/Medical%20weight%20loss%20management.png",
   },
 ];
 
@@ -126,7 +126,7 @@ export function ServicesPage() {
           playsInline
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         >
-          <source src="https://media.inboundwizard.com/supporting%20pages%20background.webm" type="video/webm" />
+          <source src="/media/supporting%20pages%20background.webm" type="video/webm" />
         </video>
         
         <div className="relative z-10 container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center">

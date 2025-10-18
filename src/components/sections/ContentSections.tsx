@@ -41,7 +41,7 @@ export function FounderSection() {
           </div>
           <div>
             <img
-              src="https://media.inboundwizard.com/Kadija%20Conteh-Barrat%20(1).png"
+              src="/media/Kadija%20Conteh-Barrat%20(1).png"
               alt="Kadija Conteh-Barrat"
               className="rounded-full shadow-xl w-full h-auto object-cover aspect-square"
             />

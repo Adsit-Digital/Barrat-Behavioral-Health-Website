@@ -4,9 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
 import { useEffect, useState } from "react";
-
-// Lazy load DOMPurify to avoid blocking the component load
-let DOMPurify: typeof import("dompurify").default | null = null;
+import DOMPurify from "dompurify";
 
 export function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -19,12 +17,6 @@ export function BlogPostPage() {
     const loadPostAndSanitizer = async () => {
       setIsLoading(true);
       try {
-        // Load DOMPurify if not already loaded
-        if (!DOMPurify) {
-          const module = await import("dompurify");
-          DOMPurify = module.default;
-        }
-
         if (slug) {
           // Normalize slug to lowercase for case-insensitive matching
           const foundPost = getPostBySlug(slug.toLowerCase());

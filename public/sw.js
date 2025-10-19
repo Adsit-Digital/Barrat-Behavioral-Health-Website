@@ -1,5 +1,5 @@
 // Generate cache name with timestamp to ensure updates on new deployments
-const CACHE_VERSION = '4.2.0';
+const CACHE_VERSION = '4.3.0'; // Bumped to force cache refresh
 const CACHE_NAME = `barrat-health-v${CACHE_VERSION}-${self.__BUILD_ID__ || Date.now()}`;
 const STATIC_ASSETS = [
   '/',

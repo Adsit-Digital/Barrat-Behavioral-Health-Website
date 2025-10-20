@@ -90,7 +90,7 @@ export function MeetOurTeamPage() {
             
             {/* Headshot - Right Side */}
             <div className="order-first md:order-last">
-              <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl mb-6">
                 <img 
                   src="/media/1514FD7B-A23A-4AFD-8D7B-0ACBED99B0FF.png" 
                   alt="Amanda Barrat, FNP-C, PMHNP-BC"
@@ -98,6 +98,16 @@ export function MeetOurTeamPage() {
                   loading="eager"
                 />
               </div>
+              <Button asChild size="lg" className="w-full bg-brand-orange hover:bg-brand-orange-dark text-white font-semibold rounded-lg px-8 py-4 text-base transition-transform hover:scale-105">
+                <a 
+                  href="https://care.headway.co/providers/kadija-conteh-barrat?utm_source=website&utm_medium=direct_link" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="Book an appointment with Amanda"
+                >
+                  Book with Amanda
+                </a>
+              </Button>
             </div>
           </div>
 

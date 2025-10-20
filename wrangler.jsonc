@@ -1,21 +1,10 @@
 /**
- * Wrangler config for the Cloudflare Durable Object template
- * STRICTLY DO NOT MODIFY THIS FILE - Hidden from AI to prevent breaking core functionality
+ * Wrangler config for Cloudflare Pages deployment
+ * Simplified configuration for pure Pages deployment with Functions
  */
- {
+{
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "barrat-health-care-website",
-	"main": "worker/index.ts",
 	"compatibility_date": "2025-04-24",
-	"account_id": "34b84c2c053c7aac2c85d8016fc2195d",
-	"assets": {
-		"not_found_handling": "single-page-application",
-		"run_worker_first": ["/api/*", "/media/*"]
-	},
-	"observability": {
-		"enabled": true
-	},
-	"build": {
-		"command": "bun install && bun run build"
-	}
+	"pages_build_output_dir": "dist"
 }

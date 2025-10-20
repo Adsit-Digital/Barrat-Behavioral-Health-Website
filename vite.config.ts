@@ -3,7 +3,6 @@ import path from "path";
 import react from "@vitejs/plugin-react";
 import { exec } from "node:child_process";
 import pino from "pino";
-import { cloudflare } from "@cloudflare/vite-plugin";
 
 const logger = pino();
 
@@ -89,7 +88,7 @@ function watchDependenciesPlugin() {
 export default ({ mode }: { mode: string }) => {
   const env = loadEnv(mode, process.cwd());
   return defineConfig({
-    plugins: [react(), cloudflare(), watchDependenciesPlugin()],
+    plugins: [react(), watchDependenciesPlugin()],
     build: {
       minify: "terser",
       sourcemap: mode === "development" ? "inline" : false,
@@ -144,8 +143,14 @@ export default ({ mode }: { mode: string }) => {
               return 'components-core';
             }
           },
-          chunkFileNames: 'assets/[name]-[hash].js',
-          entryFileNames: 'assets/[name]-[hash].js',
+          chunkFileNames: (chunkInfo) => {
+            // Ensure all chunks have .js extension
+            return 'assets/[name]-[hash].js';
+          },
+          entryFileNames: (chunkInfo) => {
+            // Ensure entry files have .js extension
+            return 'assets/[name]-[hash].js';
+          },
           assetFileNames: 'assets/[name]-[hash].[ext]'
         },
         treeshake: {

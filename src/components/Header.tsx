@@ -43,7 +43,7 @@ export function Header() {
             width={200}
             height={56}
           />
-          <span className="font-bold text-sm sm:text-base md:text-lg text-center text-dark-text mt-1 leading-tight">Barrat Behavioral Health & Primary Care</span>
+          <span className="font-bold text-[0.65rem] sm:text-xs md:text-sm text-center text-dark-text mt-1 leading-tight">Barrat Behavioral Health & Primary Care</span>
         </Link>
         
         {/* Centered Navigation Menu */}

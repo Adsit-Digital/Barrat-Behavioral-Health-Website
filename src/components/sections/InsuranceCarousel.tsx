@@ -8,7 +8,7 @@ export function InsuranceCarousel() {
         <div className="mt-12 flex justify-center">
           <img
             src="https://media.barratbhandconsulting.com/insurance-carriers-accepted.png"
-            alt="List of accepted insurance carriers including Aetna, Cigna, BlueCross BlueShield, UnitedHealthcare, Anthem, CareFirst, and Medicaid"
+            alt="Mental Health Insurance Accepted Woodbridge VA - Aetna Cigna BCBS UnitedHealthcare Anthem CareFirst Medicaid"
             className="max-w-4xl w-full h-auto rounded-lg shadow-md"
           />
         </div>

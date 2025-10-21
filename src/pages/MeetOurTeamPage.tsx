@@ -140,7 +140,7 @@ export function MeetOurTeamPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-xl mb-6">
                 <img 
                   src="https://media.barratbhandconsulting.com/1514FD7B-A23A-4AFD-8D7B-0ACBED99B0FF.png" 
-                  alt="Amanda Carmouche, FNP-C, PMHNP-BC"
+                  alt="Amanda Carmouche FNP-C PMHNP-BC - Dual Board Certified Psychiatric Mental Health Nurse Practitioner Woodbridge Virginia"
                   className="w-full h-auto object-cover"
                   loading="eager"
                 />
@@ -165,7 +165,7 @@ export function MeetOurTeamPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <img 
                   src="https://media.barratbhandconsulting.com/88615597-937E-4BEA-AA7C-D7B31167B4B0.png" 
-                  alt="Nathaniel Conteh-Barrat, COO"
+                  alt="Nathaniel Conteh-Barrat COO - Healthcare Operations Leader and Health Informatics Specialist"
                   className="w-full h-auto object-cover"
                   loading="lazy"
                 />

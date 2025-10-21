@@ -39,7 +39,7 @@ export function Header() {
         <Link to="/" className="flex flex-col items-center flex-shrink-0 min-w-0" aria-label="Barrat Behavioral Health & Primary Care Home">
           <OptimizedImage 
             src="https://media.barratbhandconsulting.com/Barratbhand-consulting%20main-logo.png" 
-            alt="Barrat Behavioral Health Logo" 
+            alt="Barrat Behavioral Health & Primary Care - Mental Health Services Woodbridge VA" 
             className="h-10 sm:h-12 md:h-14 w-auto" 
             priority={true}
             width={200}

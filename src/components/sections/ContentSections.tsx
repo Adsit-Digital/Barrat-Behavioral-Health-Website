@@ -42,7 +42,7 @@ export function FounderSection() {
           <div>
             <img
               src="https://media.barratbhandconsulting.com/Kadija%20Conteh-Barrat%20(1).png"
-              alt="Kadija Conteh-Barrat"
+              alt="Dr. Kadija Conteh-Barrat DNP FNP-BC PMHNP-BC - Board Certified Psychiatric Nurse Practitioner Woodbridge VA"
               className="rounded-full shadow-xl w-full h-auto object-cover aspect-square"
             />
           </div>

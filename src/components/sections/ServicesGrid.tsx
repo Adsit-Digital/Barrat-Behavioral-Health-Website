@@ -9,54 +9,63 @@ const services = [
     title: "ADHD Care",
     description: "Compassionate care for every step of your healing journey. We understand ADHD as a neurodevelopmental condition that impacts how individuals manage attention, energy, and impulses.",
     imageUrl: "https://media.barratbhandconsulting.com/ADHD%20Care.png",
+    imageAlt: "ADHD Treatment Woodbridge VA - Neurodivergent-Affirming Care for Children Teens and Adults",
     route: "/adhd-care",
   },
   {
     title: "PTSD Care",
     description: "We provide compassionate, trauma-informed care that supports healing, recovery, and renewed resilience for those affected by PTSD.",
     imageUrl: "https://media.barratbhandconsulting.com/PTSD%20Care.png",
+    imageAlt: "PTSD Therapy Northern Virginia - Trauma-Informed Mental Health Treatment and Recovery Support",
     route: "/ptsd-care",
   },
   {
     title: "Trauma Care",
     description: "Comprehensive, compassionate care for healing and renewal from trauma. Every plan is customized to your pace and honors your boundaries.",
     imageUrl: "https://media.barratbhandconsulting.com/Trauma%20Care.png",
+    imageAlt: "Trauma Therapy Woodbridge VA - Compassionate Healing and Recovery Mental Health Services",
     route: "/trauma-care",
   },
   {
     title: "Mental Health Care",
     description: "Promoting well-being through personalized, evidence-based support. We focus on holistic, trauma-informed approaches that empower and sustain recovery.",
     imageUrl: "https://media.barratbhandconsulting.com/mental%20health%20%26%20therapy%20(1).png",
+    imageAlt: "Mental Health Counseling Northern Virginia - Holistic Psychiatric Care and Therapy Services",
     route: "/mental-health-care",
   },
   {
     title: "Mood Disorders",
     description: "Comprehensive care to stabilize emotions and restore balance. We take a holistic, trauma-informed, and patient-centered approach to support individuals with mood disorders.",
     imageUrl: "https://media.barratbhandconsulting.com/Mood%20disorders%20care.png",
+    imageAlt: "Depression and Bipolar Disorder Treatment Woodbridge VA - Mood Disorder Psychiatric Services",
     route: "/mood-disorders",
   },
   {
     title: "Anxiety Disorders",
     description: "Compassionate care for anxiety grounded in evidence-based support. Our goal is to help children, teens, and adults regain balance, confidence, and peace of mind.",
     imageUrl: "https://media.barratbhandconsulting.com/Anxiety%20Disorders.png",
+    imageAlt: "Anxiety Treatment Prince William County - GAD Panic Disorder Social Anxiety Therapy Services",
     route: "/anxiety-disorders",
   },
   {
     title: "Sleep Concerns & Psychosomatic Symptoms",
     description: "Comprehensive care for rest, balance, and overall well-being. We help patients identify and address the root causes of sleep difficulties and stress-related symptoms.",
     imageUrl: "https://media.barratbhandconsulting.com/Sleep%20concerns%20and%20psychosomatic%20symptoms.png",
+    imageAlt: "Sleep Disorder Treatment Woodbridge VA - Insomnia and Stress-Related Physical Symptoms Therapy",
     route: "/sleep-concerns",
   },
   {
     title: "Immigrant & Refugee Psychological Support",
     description: "Trauma-informed psychological support for individuals and families navigating immigration. We provide professional, compassionate evaluations to support your journey.",
     imageUrl: "https://media.barratbhandconsulting.com/Immigrant%20%26%20refugee%20psychological%20support%20(1).png",
+    imageAlt: "Immigration Psychological Evaluation Northern Virginia - VAWA Asylum U-Visa Hardship Waiver Support",
     route: "/immigrant-refugee-support",
   },
   {
     title: "Medical Weight Loss Management",
     description: "A compassionate and comprehensive approach to medical weight loss management.",
     imageUrl: "https://media.barratbhandconsulting.com/Medical%20weight%20loss%20management.png",
+    imageAlt: "Medical Weight Loss Program Woodbridge VA - Integrated Physical and Mental Health Approach",
     route: "/medical-weight-loss",
   },
 ];
@@ -75,7 +84,7 @@ const FlipCard = ({ service }: { service: typeof services[0] }) => {
             <img 
               className="h-full w-full object-cover" 
               src={service.imageUrl} 
-              alt={`Image representing ${service.title}`} 
+              alt={service.imageAlt} 
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
           </div>
@@ -114,7 +123,7 @@ const FlipCard = ({ service }: { service: typeof services[0] }) => {
       <div className={`relative h-full w-full card-oval transition-all duration-500 [transform-style:preserve-3d] ${isFlipped ? '[transform:rotateY(180deg)]' : ''} group-hover:[transform:rotateY(180deg)]`}>
         {/* Front of Card */}
         <div className="absolute inset-0 [backface-visibility:hidden]">
-          <img className="h-full w-full rounded-oval object-cover" src={service.imageUrl} alt={`Image representing ${service.title}`} />
+          <img className="h-full w-full rounded-oval object-cover" src={service.imageUrl} alt={service.imageAlt} />
           <div className="absolute inset-0 bg-black/50 rounded-oval flex items-end p-6">
             <h3 className="text-white text-2xl font-bold font-heading">{service.title}</h3>
           </div>

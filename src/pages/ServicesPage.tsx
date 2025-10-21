@@ -10,6 +10,7 @@ const services = [
     content: "Compassionate care for every step of your healing journey. We understand ADHD as a neurodevelopmental condition that impacts how individuals manage attention, energy, and impulses. Our approach involves a comprehensive evaluation, personalized treatment plans which may include medication management and therapy, and strategies to help you thrive.",
     span: "lg:col-span-2",
     imageUrl: "https://media.barratbhandconsulting.com/ADHD%20Care.png",
+    imageAlt: "ADHD Treatment Woodbridge VA - Neurodivergent-Affirming Care for Children Teens and Adults",
   },
   {
     id: "item-2",
@@ -17,6 +18,7 @@ const services = [
     content: "We provide compassionate, trauma-informed care that supports healing, recovery, and renewed resilience for those affected by Post-Traumatic Stress Disorder. Our evidence-based therapies are designed to help you process traumatic events in a safe and supportive environment, reducing symptoms and improving your quality of life.",
     span: "lg:col-span-1",
     imageUrl: "https://media.barratbhandconsulting.com/PTSD%20Care.png",
+    imageAlt: "PTSD Therapy Northern Virginia - Trauma-Informed Mental Health Treatment and Recovery Support",
   },
   {
     id: "item-3",
@@ -24,6 +26,7 @@ const services = [
     content: "Comprehensive, compassionate care for healing and renewal from trauma. Every plan is customized to your pace and honors your boundaries. We utilize a range of therapeutic modalities to address the complex effects of trauma, helping you build coping skills and find a path toward healing.",
     span: "lg:col-span-1",
     imageUrl: "https://media.barratbhandconsulting.com/Trauma%20Care.png",
+    imageAlt: "Trauma Therapy Woodbridge VA - Compassionate Healing and Recovery Mental Health Services",
   },
   {
     id: "item-4",
@@ -31,6 +34,7 @@ const services = [
     content: "Promoting well-being through personalized, evidence-based support. We focus on holistic, trauma-informed approaches that empower and sustain recovery. Our general mental health services address a wide range of concerns, providing a foundation for emotional wellness and personal growth.",
     span: "lg:col-span-2",
     imageUrl: "https://media.barratbhandconsulting.com/mental%20health%20%26%20therapy%20(1).png",
+    imageAlt: "Mental Health Counseling Northern Virginia - Holistic Psychiatric Care and Therapy Services",
   },
   {
     id: "item-5",
@@ -38,6 +42,7 @@ const services = [
     content: "Comprehensive care to stabilize emotions and restore balance. We take a holistic, trauma-informed, and patient-centered approach to support individuals with mood disorders such as depression and bipolar disorder. Treatment is tailored to your specific needs, combining therapy, medication management, and lifestyle support.",
     span: "lg:col-span-3",
     imageUrl: "https://media.barratbhandconsulting.com/Mood%20disorders%20care.png",
+    imageAlt: "Depression and Bipolar Disorder Treatment Woodbridge VA - Mood Disorder Psychiatric Services",
   },
   {
     id: "item-6",
@@ -45,6 +50,7 @@ const services = [
     content: "Compassionate care for anxiety grounded in evidence-based support. Our goal is to help children, teens, and adults regain balance, confidence, and peace of mind. We treat various anxiety disorders, including generalized anxiety, panic disorder, and social anxiety, using proven therapeutic techniques.",
     span: "lg:col-span-1",
     imageUrl: "https://media.barratbhandconsulting.com/Anxiety%20Disorders.png",
+    imageAlt: "Anxiety Treatment Prince William County - GAD Panic Disorder Social Anxiety Therapy Services",
   },
   {
     id: "item-7",
@@ -52,6 +58,7 @@ const services = [
     content: "Comprehensive care for rest, balance, and overall well-being. We help patients identify and address the root causes of sleep difficulties and stress-related physical symptoms. Our integrated approach considers the deep connection between mind and body to promote holistic healing.",
     span: "lg:col-span-2",
     imageUrl: "https://media.barratbhandconsulting.com/Sleep%20concerns%20and%20psychosomatic%20symptoms.png",
+    imageAlt: "Sleep Disorder Treatment Woodbridge VA - Insomnia and Stress-Related Physical Symptoms Therapy",
   },
   {
     id: "item-8",
@@ -59,6 +66,7 @@ const services = [
     content: "Trauma-informed psychological support for individuals and families navigating immigration. We provide professional, compassionate evaluations and therapy to support your journey, addressing the unique stressors and challenges faced by immigrant and refugee populations.",
     span: "lg:col-span-2",
     imageUrl: "https://media.barratbhandconsulting.com/Immigrant%20%26%20refugee%20psychological%20support%20(1).png",
+    imageAlt: "Immigration Psychological Evaluation Northern Virginia - VAWA Asylum U-Visa Hardship Waiver Support",
   },
   {
     id: "item-9",
@@ -66,6 +74,7 @@ const services = [
     content: "A compassionate and comprehensive approach to medical weight loss management. We understand the connection between mental health and weight, offering support that addresses both psychological and physiological factors to help you achieve and maintain a healthy lifestyle.",
     span: "lg:col-span-1",
     imageUrl: "https://media.barratbhandconsulting.com/Medical%20weight%20loss%20management.png",
+    imageAlt: "Medical Weight Loss Program Woodbridge VA - Integrated Physical and Mental Health Approach",
   },
 ];
 
@@ -179,7 +188,7 @@ export function ServicesPage() {
                     <div className="overflow-hidden">
                       <img 
                         src={service.imageUrl} 
-                        alt={service.title} 
+                        alt={service.imageAlt} 
                         className="w-full h-auto -mt-5 -mb-5" 
                       />
                     </div>

@@ -1,5 +1,5 @@
 # robots.txt for Barrat Behavioral Health & Primary Care
-# Updated: 2025-10-21
+# Updated: 2025-01-21
 
 # Allow all search engines to index the site
 User-agent: *

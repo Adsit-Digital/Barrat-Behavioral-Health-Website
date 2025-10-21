@@ -26,7 +26,7 @@ export function BlogHighlights() {
               </CardContent>
               <CardFooter>
                 <Link to={`/blog/${post.slug}`} className="text-brand-orange font-semibold hover:text-brand-orange-dark flex items-center" aria-label={`Read more about ${post.title}`}>
-                  Read More <ArrowRight className="ml-2 h-4 w-4" />
+                  Read Full Article <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </CardFooter>
             </Card>

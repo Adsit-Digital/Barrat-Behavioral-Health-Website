@@ -97,7 +97,7 @@ const FlipCard = ({ service }: { service: typeof services[0] }) => {
               className="inline-flex items-center justify-center text-brand-blue font-semibold hover:text-brand-blue/80 transition-colors duration-300 py-2 px-4 border border-brand-blue rounded-md hover:bg-brand-blue/5 min-h-[44px]"
               aria-label={`Learn more about ${service.title}`}
             >
-              Learn More <ArrowRight className="ml-2 h-4 w-4" />
+              Learn About {service.title} Services <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
           </div>
         </div>
@@ -140,7 +140,7 @@ const FlipCard = ({ service }: { service: typeof services[0] }) => {
             aria-label={`Learn more about ${service.title}`}
             onClick={(e) => e.stopPropagation()}
           >
-            Learn More <ArrowRight className="ml-2 h-4 w-4" />
+            Learn About {service.title} Treatment <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </div>
       </div>

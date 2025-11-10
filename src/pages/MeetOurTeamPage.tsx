@@ -93,7 +93,7 @@ export function MeetOurTeamPage() {
                   Amanda Carmouche
                 </h3>
                 <p className="text-lg font-semibold text-brand-orange mb-4">
-                  FNP-C, PMHNP-BC
+                  FNP-BC, PMHNP-BC
                 </p>
                 <p className="text-base text-gray-600 italic mb-4">
                   Dual Board-Certified Family Nurse Practitioner & Psychiatric-Mental Health Nurse Practitioner
@@ -102,7 +102,7 @@ export function MeetOurTeamPage() {
               
               <div className="prose prose-lg max-w-none">
                 <p className="text-gray-700 leading-relaxed">
-                  Hi there, I'm Amanda! I'm a dual board-certified Family Nurse Practitioner (FNP-C) and Psychiatric-Mental Health Nurse Practitioner (PMHNP-BC) with over five years of experience providing compassionate, evidence-based care to adults 18 and older.
+                  Hi there, I'm Amanda! I'm a dual board-certified Family Nurse Practitioner (FNP-BC) and Psychiatric-Mental Health Nurse Practitioner (PMHNP-BC) with over five years of experience providing compassionate, evidence-based care to adults 18 and older.
                 </p>
                 
                 <p className="text-gray-700 leading-relaxed">
@@ -140,7 +140,7 @@ export function MeetOurTeamPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-xl mb-6">
                 <img 
                   src="https://media.barratbhandconsulting.com/1514FD7B-A23A-4AFD-8D7B-0ACBED99B0FF.png" 
-                  alt="Amanda Carmouche FNP-C PMHNP-BC - Dual Board Certified Psychiatric Mental Health Nurse Practitioner Woodbridge Virginia"
+                  alt="Amanda Carmouche FNP-BC PMHNP-BC - Dual Board Certified Psychiatric Mental Health Nurse Practitioner Woodbridge Virginia"
                   className="w-full h-auto object-cover"
                   loading="eager"
                 />

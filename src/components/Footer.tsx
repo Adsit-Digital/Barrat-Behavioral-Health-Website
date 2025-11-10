@@ -47,6 +47,22 @@ export function Footer() {
               We are honored to support our community's emotional and physical wellness. If you are experiencing a medical emergency, feeling suicidal, depressed, or struggling with a difficult situation, please call or text the Help Crisis Line <a href="tel:988" className="text-brand-orange hover:text-brand-orange-dark font-semibold">988</a>, call <a href="tel:911" className="text-brand-orange hover:text-brand-orange-dark font-semibold">911</a> or go to the nearest emergency room or crisis center. We are not a 24/7 emergency provider.
             </p>
           </div>
+          <div className="flex justify-center items-center mb-6">
+            <a 
+              id='COCBadgeURL' 
+              href='https://www.chamberofcommerce.com/business-directory/virginia/lake-ridge/mental-health-service/2024063532-barrat-behavioral-health-and-primary-care?source=memberwebsite' 
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='Barrat Behavioral Health and Primary Care - Chamber of Commerce Member'
+            >
+              <img 
+                style={{width: 'auto', height: '150px'}} 
+                id='COCBadgeIMG' 
+                src='https://media.barratbhandconsulting.com/chamber%20of%20commerce%20(1).png'
+                alt='Chamber of Commerce Member Badge'
+              />
+            </a>
+          </div>
           <div className="flex flex-col sm:flex-row justify-between items-center">
             <p className="text-base text-gray-400">&copy; {new Date().getFullYear()} Barrat Behavioral Health and Primary Care. All rights reserved.</p>
             <p className="text-sm text-gray-500 mt-4 sm:mt-0">Built with ❤️ at Adsit Digital</p>

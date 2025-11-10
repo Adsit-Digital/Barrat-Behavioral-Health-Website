@@ -1,7 +1,8 @@
 {
   "version": 1,
   "include": [
-    "/media/*"
+    "/media/*",
+    "/coc-badge"
   ],
   "exclude": []
 }

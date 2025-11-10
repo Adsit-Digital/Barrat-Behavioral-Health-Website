@@ -147,7 +147,7 @@ export function MeetOurTeamPage() {
               </div>
               <Button asChild size="lg" className="w-full bg-brand-orange hover:bg-brand-orange-dark text-white font-semibold rounded-lg px-8 py-4 text-base transition-transform hover:scale-105">
                 <a 
-                  href="https://care.headway.co/providers/kadija-conteh-barrat?utm_source=website&utm_medium=direct_link" 
+                  href="https://care.headway.co/providers/amanda-carmouche?utm_source=pem&utm_medium=direct_link&utm_campaign=162169" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Book an appointment with Amanda"

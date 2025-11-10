@@ -12,7 +12,7 @@ Disallow: /sw.js
 Disallow: /functions/
 
 # Sitemap location
-Sitemap: https://barratbhandconsulting.com/sitemap.xml
+Sitemap: https://www.barratbhandconsulting.com/sitemap.xml
 
 # Crawl rate
 Crawl-delay: 1

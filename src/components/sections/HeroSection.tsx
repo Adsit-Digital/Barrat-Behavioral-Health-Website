@@ -10,12 +10,11 @@ export function HeroSection() {
       <OptimizedVideo
         src="https://media.barratbhandconsulting.com/videoBanner.mp4"
         className="absolute inset-0 w-full h-full object-cover z-0"
-        priority={true}
         autoPlay={true}
         muted={true}
         loop={true}
         playsInline={true}
-        preload="auto"
+        preload="metadata"
       />
       
       {/* Overlay */}

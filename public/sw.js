@@ -14,7 +14,6 @@ const STATIC_ASSETS = [
 // External resources from CDN that should be cached
 const EXTERNAL_RESOURCES = [
   '/media/barrat%20behavioral%20health%20and%20primary%20care.svg',
-  '/media/videoBanner.mp4',
   '/media/header-curve1.svg',
   '/media/Rediscover_Wellness.mp4',
   '/media/supporting%20pages%20background.webm',
